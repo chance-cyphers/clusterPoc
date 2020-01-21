@@ -18,5 +18,4 @@ defmodule Stuff do
   def handle_call(:get_nodes, _from, state) do
     {:reply, Node.list(), state}
   end
-
 end
