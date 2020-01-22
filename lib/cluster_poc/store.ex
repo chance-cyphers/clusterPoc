@@ -35,5 +35,19 @@ defmodule ClusterPoc.Store do
         ram_copies: [node()]
       ]
 
+  @impl true
+  def init_store() do
+    IO.puts("IKNITTING THE STORE")
+  end
+
+  @impl true
+  def copy_store() do
+    IO.puts("COPYING THE STORE")
+  end
+
+  @impl true
+  def resolve_conflict(node) do
+    IO.puts("RESOLVING CONFLICT W/ #{node}")
+  end
 
 end
