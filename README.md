@@ -1,21 +1,8 @@
 # ClusterPoc
 
-**TODO: Add description**
+Goal: build a clustered application that discovers other nodes as they appear and dynamically updates Mnesia schema with both distributed and local-only tables 
 
-## Installation
+Run nodes like this: `iex --name <instance name> -S mix`
+- current configuration is looking for \<instance name> of either `foo@127.0.0.1` or `bar@127.0.0.1` 
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `cluster_poc` to your list of dependencies in `mix.exs`:
-
-```elixir
-def deps do
-  [
-    {:cluster_poc, "~> 0.1.0"}
-  ]
-end
-```
-
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/cluster_poc](https://hexdocs.pm/cluster_poc).
-
+Call `Stuff.<function name>` to see some things demo-d
